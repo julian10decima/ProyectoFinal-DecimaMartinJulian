@@ -28,7 +28,7 @@ public class PersonaController {
         return "La persona fue creada correctamente";
     }
     
-    @DeleteMapping("/personas/borarr/{id}")
+    @DeleteMapping("/personas/borrar/{id}")
     public String deletePersona(@PathVariable Long id){
         ipersonaService.deletePersona(id);
         return "La persona fue eliminada correctamente";
